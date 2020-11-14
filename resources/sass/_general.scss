@@ -1,0 +1,28 @@
+body {
+    color: $gray!important;
+    background-color: white!important;
+}
+.bg-red {
+    background-color: $red;
+}
+
+hr {
+    margin-top: .5rem!important;
+    margin-bottom: .5rem!important;
+}
+.content {
+    width: 1128px;
+    margin: 0 auto;
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+}
+
+a {
+    text-decoration: underline;
+    color: $gray;
+}
+
+.slick-slide {
+    outline: none!important;
+}

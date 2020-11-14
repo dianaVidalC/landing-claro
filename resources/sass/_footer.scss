@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 1128px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: baseline;
+        height: 200px;
+        padding: 80px 28px;
+    }
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        padding: 16px!important;
+    }
+    p {
+        color: white;
+        font-size: 14px;
+        line-height: 16px;
+        @media screen and (max-width: 768px) {
+
+            &:first-child {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 425px) {
+
+            &:first-child {
+                width: 64%;
+            }
+        }
+    }
+}

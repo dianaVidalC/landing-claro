@@ -1,0 +1,29 @@
+.content-ubicaciones {
+    padding: 80px 0;
+    width: 880px!important;
+    margin: 0 auto;
+    @media screen and (max-width: 1040px) {
+
+        width: 100%!important;
+    }
+    h2 {
+        text-align: center;
+        padding-bottom: 69px;
+    }
+    .contenido {
+        .distrito {
+            font-weight: 500;
+            font-size: 18px;
+            color: $red;
+        }
+        .clock {
+            width: 15px;
+        }
+        .pointer {
+            width: 12px;
+        }
+        .row.detalle {
+            padding-bottom: 31px;
+        }
+    }
+}

@@ -1,0 +1,190 @@
+.best-seller {
+    h2 {
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .slick-carousel-card {
+        // display: flex;
+        // justify-content: space-around;
+        .card {
+            width: 251px;
+            height: 293px;
+            box-shadow: 0px 4px 24px rgba(202, 207, 214, 0.6);
+            border-radius: 20px;
+            margin: 0 auto;
+            img {
+                width: 63px;
+                height: 111px;
+                margin: 0 auto;
+                margin-top: 22px;
+            }
+            h5 {
+                font-size: 18px;
+            }
+            h6 {
+                font-size: 18px;
+                color: black;
+                font-weight: 700;
+            }
+            .price {
+                font-size: 24px;
+                line-height: 28px;
+                font-weight: 700;
+            }
+            .payment {
+                font-weight: normal;
+                font-size: 14px;
+            }
+            .card-text {
+                font-size: 14px;
+                line-height: 16px;
+                color: $red;
+            }
+            .franja {
+                position: absolute;
+                width: 100%;
+                height: 13px;
+                top: -2px;
+                margin-top: 0;
+            }
+            .oferta {
+                position: absolute;
+                width: 73px;
+                margin-top: 0;
+                height: auto;
+                top: 9px;
+            }
+        }
+    }
+    .more {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-decoration-line: underline;
+        color: $light-blue;
+        text-align: center;
+        margin-top: 40px;
+        display: block;
+    }
+
+}
+.home {
+    padding: 142px 0;
+    @media screen and (max-width: 768px) {
+        padding: 60px 0;
+    }
+    h2 {
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        margin-bottom: 56px;
+        @media screen and (max-width: 768px) {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+    }
+    .content {
+        display: flex;
+        justify-content: space-around;
+        width: 900px;
+        margin: 0 auto;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        .card {
+            width: 264px;
+            height: 350px;
+            box-shadow: 0px 4px 24px rgba(202, 207, 214, 0.6);
+            border-radius: 20px;
+            position: relative;
+            .card-img-top {
+                width: 232px;
+                height: 159px;
+                margin: 0 auto;
+                padding: 14px 0;
+            }
+            h5 {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+                color: $red;
+                text-align: center;
+            }
+            .price {
+                font-size: 24px;
+                line-height: 28px;
+                font-weight: 700;
+            }
+            .payment {
+                font-weight: normal;
+                font-size: 14px;
+            }
+            .card-text {
+                font-size: 14px;
+                line-height: 16px;
+                color: $red;
+            }
+            .service {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+                .internet1 {
+                    width: 28px;
+                }
+                .internet2 {
+                    width: 182px;
+                }
+                .internet3 {
+                    width: 116px;
+                }
+            }
+            a {
+                border-radius: 40px;
+                background-color: $light-blue;
+                color: white;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                margin: 0 auto;
+                width: 200px;
+                margin-top: 25px;
+            }
+
+            @media screen and (max-width: 768px) {
+
+                margin: 0 auto;
+            }
+        }
+    }
+}
+.slick-dots {
+    position: static;
+    margin-top: 30px;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: 1;
+    color: $gray-soft;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: $red!important;
+}

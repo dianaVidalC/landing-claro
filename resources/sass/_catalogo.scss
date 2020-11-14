@@ -1,0 +1,129 @@
+.content-catalogo {
+    width: 1128px;
+    margin: 0 auto;
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+    .row {
+        margin-top: 59px;
+        @media screen and (max-width: 786px) {
+            margin-top: 0px;
+         }
+        .filter-col {
+            border: 1px solid $gray-soft;
+            box-sizing: border-box;
+            border-radius: 20px;
+            width: 232px;
+            height: 542px;
+            padding: 24px;
+            @media screen and (max-width: 786px) {
+               display: none;
+            }
+            h2 {
+                color: black;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 26px;
+                padding-bottom: 10px;
+            }
+            .section {
+                margin-bottom: 40px;
+                .subtitle {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $gray-dark;
+                }
+                .custom-radio {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        .filter {
+            position: relative;
+            margin: 40px 0;
+            @media screen and (max-width: 786px) {
+                margin: 32px 0;
+            }
+            .input-filter, .input-filter-m  {
+                border: 1px solid #E0E0E0;
+                box-sizing: border-box;
+                border-radius: 20px;
+                width: 384px;
+                height: 40px;
+                outline: none;
+                padding: 10px 20px 10px 48px;
+                &::placeholder {
+                    font-size: 15px;
+                    color: $gray-dark;
+                }
+                @media screen and (max-width: 786px) {
+                    width: 300px;
+                    // margin: 0 auto;
+                }
+            }
+            .input-filter-m {
+                display: none;
+                @media screen and (max-width: 786px) {
+                    display: block;
+                    margin-top: 15px;
+                }
+            }
+            img {
+                position: absolute;
+                width: 18px;
+                left: 19px;
+                top: 10px;
+            }
+        }
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        
+            .card {
+                width: 251px;
+                height: 293px;
+                box-shadow: 0px 4px 24px rgba(202, 207, 214, 0.6);
+                border-radius: 20px;
+                // margin-left: auto;
+                // margin-right: auto;
+                margin-bottom: 56px;
+                color: $gray;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                }
+                img {
+                    width: 63px;
+                    height: 111px;
+                    margin: 0 auto;
+                    margin-top: 22px;
+                }
+                h5 {
+                    font-size: 18px;
+                }
+                h6 {
+                    font-size: 18px;
+                    color: black;
+                    font-weight: 700;
+                }
+                .price {
+                    font-size: 24px;
+                    line-height: 28px;
+                    font-weight: 700;
+                }
+                .payment {
+                    font-weight: normal;
+                    font-size: 14px;
+                }
+                .card-text {
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $red;
+                }
+            }
+        }
+    }
+}
